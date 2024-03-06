@@ -1,25 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=cafetaria sema", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully<br>";
-
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-}
-
-$stmt = $conn->prepare("SELECT username, password FROM users");
-$stmt->execute();
-
-$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-foreach ($results as $row)
-    echo '<h1>' . $row["username"] . '</h1>';
-    echo '<h1>' . $row["password"] . '</h1>';
-?>
+    <h2>register</h2>
+    <form action="register.php" method="POST">
+        <input type = "text" name="username" placeholder="Voer een user in">
+        <input type="password"  name="password" placeholder="Voer een wachtwoord in">
+        <input type="submit" value="Register">
+    </form>
+    <h2>log in</h2>
+    <form action="login.php" method="GET">
+        <input type = "text" name="username" placeholder="Voer een user in">
+        <input type="password"  name="password" placeholder="Voer een wachtwoord in">
+        <input type="submit" value="login">
+    </form>
 </body>
+</html>
