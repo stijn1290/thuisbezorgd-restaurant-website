@@ -1,22 +1,25 @@
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="img/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>register</h2>
-    <form action="register.php" method="POST">
-        <input type = "text" name="username" placeholder="Voer een user in">
-        <input type="password"  name="password" placeholder="Voer een wachtwoord in">
-        <input type="submit" value="Register">
-    </form>
-    <h2>log in</h2>
-    <form action="login.php" method="GET">
-        <input type = "text" name="username" placeholder="Voer een user in">
-        <input type="password"  name="password" placeholder="Voer een wachtwoord in">
-        <input type="submit" value="login">
-    </form>
+<header>
+   <nav>
+     <img src="img/image 1.png" alt="">
+     <nav id="pagetagsstyling">
+       <h1>Home</h1>
+       <h1>Online Bestellen</h1>
+       <h1>Meer></h1>
+       </nav>
+     <nav id="imagestyling">
+       <a id= "accountimage" href="account.php"><img src="img/image 2.png" alt=""></a> 
+       <img src="img/image 3.png" alt="">
+       <img src="img/image 13.png" alt="" width="76" height="66">
+     </nav>
+   </nav>
+</header>
 </body>
 </html>

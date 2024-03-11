@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100vw;
+  background-color: #862727;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+}
+h1 {
+  align-self: center;
+  color: #d8c479;
+}
+img {
+  size: 10px;
+  align-self: center;
+}
+#pagetagsstyling {
+  gap: 50px;
+}
+#imagestyling{
+  gap: 100px;
+}
+#accountimage{
+  align-self: center;
+}
