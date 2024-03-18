@@ -1,6 +1,19 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.background {
+  background-image: url(../img/image4.png);
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -9;
 }
 header {
   display: flex;
@@ -14,6 +27,7 @@ nav {
   flex-direction: row;
   gap: 250px;
 }
+h2,
 h1 {
   align-self: center;
   color: #d8c479;
@@ -25,9 +39,87 @@ img {
 #pagetagsstyling {
   gap: 50px;
 }
-#imagestyling{
+#imagestyling {
   gap: 100px;
 }
-#accountimage{
+#accountimage {
   align-self: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  height: 200px;
+  width: 384px;
+  background-color: #862727;
+  margin-bottom: 280px;
+}
+.block input {
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  border-width: 2px;
+}
+.enter {
+  background-color: #d8c479;
+  height: 30px;
+  width: 100px;
+  border-radius: 4px;
+}
+#entertext {
+  text-align: center;
+  color: #862727;
+}
+.inforestaurant {
+  width: 100vw;
+  height: 116px;
+  background-color: #862727;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bestellenbezorgen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 292px;
+  background-color: black;
+}
+.bezorgtijdenblok {
+  display: flex;
+  justify-content: center;
+  height: 71px;
+  width: 228px;
+  background-color: #862727;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bestelnu {
+  display: flex;
+  justify-content: center;
+  height: 209px;
+  width: 376px;
+  background-color: #d8c479;
+  border-radius: 20px;
+}
+.neemcontactop {
+  display: flex;
+  justify-content: center;
+  height: 208px;
+  width: 230px;
+  background-color: #862727;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+#positioncolumn{
+  margin-left: 15px;
 }

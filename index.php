@@ -3,23 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="background"></section>
 <header>
-   <nav>
-     <img src="img/image 1.png" alt="">
-     <nav id="pagetagsstyling">
-       <h1>Home</h1>
-       <h1>Online Bestellen</h1>
-       <h1>Meer></h1>
-       </nav>
-     <nav id="imagestyling">
-       <a id= "accountimage" href="account.php"><img src="img/image 2.png" alt=""></a> 
-       <img src="img/image 3.png" alt="">
-       <img src="img/image 13.png" alt="" width="76" height="66">
-     </nav>
-   </nav>
+<?php 
+include("header.php");
+?>
 </header>
+<main>
+    <section class="block">
+      <h1>Wat is u postcode?</h1>
+      <input type="text" name="" placeholder="voer u postcode in">
+      <div class="enter">
+        <h1 id="entertext">enter</h1>
+      </div>
+    </section>
+</main>
+<footer>
+    <?php 
+    include("footer.php");
+    ?>
+</footer>
 </body>
 </html>
