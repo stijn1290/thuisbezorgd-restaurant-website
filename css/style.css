@@ -5,7 +5,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.background {
+.background1 {
   background-image: url(../img/image4.png);
   opacity: 0.8;
   width: 100vw;
@@ -13,6 +13,15 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: -9;
+}
+.background2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ad0c0c;
+  width: 100vw;
+  height: 5000px;
+  position: absolute;
   z-index: -9;
 }
 header {
@@ -28,9 +37,11 @@ nav {
   gap: 250px;
 }
 h2,
-h1 {
+h1,
+a {
   align-self: center;
   color: #d8c479;
+  text-decoration: none;
 }
 img {
   size: 10px;
@@ -59,7 +70,7 @@ main {
   height: 200px;
   width: 384px;
   background-color: #862727;
-  margin-bottom: 280px;
+  margin-bottom: 195px;
 }
 .block input {
   text-align: center;
@@ -120,6 +131,50 @@ main {
   border-radius: 20px;
   margin-right: 20px;
 }
-#positioncolumn{
+#positioncolumn {
   margin-left: 15px;
+}
+.gerechtendranken {
+  background-color: black;
+  width: 700px;
+  height: 4600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.gerecht {
+  background-color: #862727;
+  width: 500px;
+  height: 404px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.voegtoe{
+  width: 100px;
+  height: 50px;
+  background-color: #d8c479;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.algemeen{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-left: 3px;
+}
+#product{
+  align-self: flex-start;
+}
+#prijs{
+  align-self: flex-start;
+}
+#imgstyling{
+  height: 265px;
+  width: 293px;
 }

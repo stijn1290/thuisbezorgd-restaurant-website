@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="background"></section>
+    <section class="background1"></section>
 <header>
 <?php 
 include("header.php");

@@ -11,8 +11,8 @@
     <nav>
         <img src="img/image 1.png" alt="">
         <nav id="pagetagsstyling">
-            <h2>home</h2>
-            <h2>Online Bestellen</h2>
+            <a href="index.php">home</a>
+            <a href="menu.php">online bestellen</a>
             <h2>Meer></h2>
         </nav>
         <nav id="imagestyling">

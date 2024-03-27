@@ -22,7 +22,7 @@
                 <h1>vrijdag t/m zondag 15:00-22:00</h1>
             </div>
             <div class="bestelnu">
-                <h1 id="entertext">bestel nu</h1>
+                <a href="menu.php"><h1 id="entertext">bestel nu</h1></a>
             </div>
             <div class="neemcontactop">
                 <h1>Neem contact op</h1>
