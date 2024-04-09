@@ -6,6 +6,8 @@ $productnaam ="root";
 $prijs="";
 $omschrijving="";
 $afbeelding="";
+$naam="root";
+$beschrijving="";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=cafetaria sema", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

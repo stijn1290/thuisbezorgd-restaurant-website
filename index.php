@@ -20,7 +20,7 @@ include("header.php");
       <h1>Wat is u postcode?</h1>
       <input type="text" name="" placeholder="voer u postcode in">
       <div class="enter">
-        <h1 id="entertext">enter</h1>
+        <h1 id="anderekleur">enter</h1>
       </div>
     </section>
 </main>

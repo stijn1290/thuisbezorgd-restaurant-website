@@ -7,7 +7,6 @@
 }
 .background1 {
   background-image: url(../img/image4.png);
-  opacity: 0.8;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -84,7 +83,7 @@ main {
   width: 100px;
   border-radius: 4px;
 }
-#entertext {
+#anderekleur {
   text-align: center;
   color: #862727;
 }
@@ -137,7 +136,7 @@ main {
 .gerechtendranken {
   background-color: black;
   width: 700px;
-  height: 4600px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -177,4 +176,65 @@ main {
 #imgstyling{
   height: 265px;
   width: 293px;
+}
+.flexaccount{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+.accountblock{
+  background-color: #862727;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+}
+input{
+  height: 60px;
+  width: 200px;
+}
+#stylingbuttonlogin{
+  background-color: #d8c479;
+}
+.blockbeheer{
+  height: 60px;
+  width: 300px;
+  background-color: #d8c479;
+  display: flex;
+  justify-content: center;
+}
+.stylingadmin{
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.stylingadminsections{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.autostyle{
+  width: auto;
+  height: auto;
+  background-color: #862727;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.blockbeheer2{
+  height: 60px;
+  width: 300px;
+  background-color: #862727;
+  display: flex;
+  justify-content: center;
+}
+#gapbetween{
+  gap: 320px;
+}
+#autostyleanders{
+  display: flex;
+  flex-direction: column;
 }

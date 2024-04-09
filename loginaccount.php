@@ -9,7 +9,7 @@ $sql = "SELECT * FROM users WHERE username='$user' AND password ='$pass'";
 $result =$conn->query($sql);
 if ($result->rowCount()>0)
 {
-    echo "welkom";
+    echo "welkom ". $user;
 }
 else
 {
