@@ -23,7 +23,7 @@
             <input type="password" name="password" placeholder="Voer een wachtwoord in">
             <input id="stylingbuttonlogin" type="submit" value="Register">
         </form>
-        <form action="loginaccount.php" method="GET">
+        <form action="loginaccount.php" method="POST" class="accountblock">
             <h2>Inloggen</h2>
             <input type="text" name="username" placeholder="Voer een user in">
             <input type="password" name="password" placeholder="Voer een wachtwoord in">

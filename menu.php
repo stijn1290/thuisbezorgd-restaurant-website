@@ -18,6 +18,17 @@ include("header.php");
 ?>
     </header>
     <main>
+        <nav id="nogap">
+            <?php
+            if($_SERVER['REQUEST_METHOD'] == "POST")
+            {
+            echo "<h1>Postcode:</h1>";
+            
+            $postcode = $_POST['postcode'];
+            echo'<h1>'.$postcode.'</h1>';
+            }
+            ?>
+        </nav>
         <section class="gerechtendranken">
             <h1>Gerechten en dranken</h1>
             <form action="zoeken.php" method="POST">
@@ -63,11 +74,6 @@ include("header.php");
      ?>
         </section>
     </main>
-    <footer>
-        <?php
-    include("footer.php");
-    ?>
-    </footer>
 </body>
 
 </html>

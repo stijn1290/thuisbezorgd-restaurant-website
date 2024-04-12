@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,23 @@
         <nav>
             <div id="positioncolumn">
                 <div class="bezorgtijdenblok">
-                <h1>bezorgtijden</h1>
+                    <h1>bezorgtijden</h1>
                 </div>
                 <h1>maandag t/m donderdag 17:00-20:00</h1>
                 <h1>vrijdag t/m zondag 15:00-22:00</h1>
             </div>
             <div class="bestelnu">
-                <a href="menu.php"><h1 id="anderekleur">bestel nu</h1></a>
+                <a href="menu.php">
+                    <h1 id="anderekleur">bestel nu</h1>
+                </a>
             </div>
             <div class="neemcontactop">
-                <h1>Neem contact op</h1>
+                <a href="contactpage.php">
+                    <h1>Neem contact op</h1>
+                </a>
             </div>
         </nav>
     </div>
 </footer>
+
 </html>

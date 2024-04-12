@@ -1,3 +1,9 @@
+<?php
+include("connection.php");
+session_start();
+if ($_SESSION['rol']== 'admin'){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +50,7 @@
         $result=$conn->query($sql);
         foreach ($result as $row) {
             echo '<form action="verwijderen.php" method="POST" class="autostyle">';
-            echo '<input name="id" value=" '. $row["id"] .' " disabled>';
+            echo '<input name="id" value=" '. $row["id"] .' ">';
             echo '<input name="productnaam" value=" '. $row["productnaam"] .' " disabled>';
             echo '<input type="submit" value="verwijderen">';
             echo '</form>';
@@ -62,7 +68,7 @@
         $result=$conn->query($sql);
         foreach ($result as $row) {
             echo '<form action="aanpassen.php" method="POST" class="autostyle">';
-            echo '<input name="id" value="'.$row["id"].'" disabled>';
+            echo '<input name="id" value="'.$row["id"].'" >';
             echo '<h1>'. $row['productnaam'] .'</h1>';
             echo '<input name="omschrijving" value="'. $row["omschrijving"].'">';
             echo '<input type="submit" value="aanpassen">';
@@ -73,3 +79,12 @@
 </body>
 
 </html>
+<?php
+}
+elseif($_SESSION['controle']){
+    header('location:gebruiker.php');
+}
+else{
+    header('location:account.php');
+}
+?>

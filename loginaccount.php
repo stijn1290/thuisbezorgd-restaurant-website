@@ -1,17 +1,19 @@
 <?php
-
-
 include 'connection.php';
 
-$user = $_GET['username'];
-$pass = $_GET['password'];
-$sql = "SELECT * FROM users WHERE username='$user' AND password ='$pass'";
-$result =$conn->query($sql);
-if ($result->rowCount()>0)
+$user = $_POST['username'];
+$pass = $_POST['password'];
+$sql = "SELECT * FROM users WHERE username= :username AND password = :password";
+$stmt= $conn->prepare($sql);
+$stmt->bindParam(":username" , $user);
+$stmt->bindParam(":password" , $pass);
+$result = $stmt->execute();
+$data = $stmt->fetch();
+if ($result)
 {
-    echo "welkom ". $user;
-}
-else
-{
-    echo "ongeldige gebruikersnaam of wachtwoord";
+ session_start();
+ $_SESSION['username']= $data['username'];
+ $_SESSION['rol']= $data['rol'];
+ $_SESSION['controle']= $result;
+ header('location:admin.php');
 }
