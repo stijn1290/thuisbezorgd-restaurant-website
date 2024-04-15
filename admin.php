@@ -3,7 +3,7 @@ include("connection.php");
 session_start();
 if ($_SESSION['rol']== 'admin'){
 
-?>
+?>  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +34,7 @@ if ($_SESSION['rol']== 'admin'){
             </nav>
             <nav id="gapbetween">
                 <h1>Prijs:</h1>
-                <input type="text" name="productprijs" id=>
+                <input type="text" name="productprijs">
             </nav>
             <input type="submit" value="aanmaken">
         </form>
@@ -67,8 +67,8 @@ if ($_SESSION['rol']== 'admin'){
         $sql = "SELECT `id`, `productnaam`, `omschrijving` FROM `eetproducten` ";
         $result=$conn->query($sql);
         foreach ($result as $row) {
-            echo '<form action="aanpassen.php" method="POST" class="autostyle">';
-            echo '<input name="id" value="'.$row["id"].'" >';
+            echo '<form action="aanpassen.php" method="POST" class="aanpassenstyle">';
+            echo '<h1> '.$row["id"]. '</h1>';
             echo '<h1>'. $row['productnaam'] .'</h1>';
             echo '<input name="omschrijving" value="'. $row["omschrijving"].'">';
             echo '<input type="submit" value="aanpassen">';

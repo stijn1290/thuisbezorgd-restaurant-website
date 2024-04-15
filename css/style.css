@@ -19,7 +19,7 @@
   width: 100vw;
   background-color: #ad0c0c;
   width: 100vw;
-  height: 5000px;
+  height: auto;
   position: absolute;
   z-index: -9;
 }
@@ -133,7 +133,7 @@ main {
   display: flex;
   justify-content: center;
   height: 208px;
-  width: 230px;
+  width: 300px;
   background-color: #862727;
   border-radius: 20px;
   margin-right: 20px;
@@ -143,24 +143,25 @@ main {
 }
 .gerechtendranken {
   background-color: black;
-  width: 700px;
-  padding: 0px;
+  width: 900px;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
   gap: 25px;
+  margin-bottom: 25px;
 }
 .gerecht {
   background-color: #862727;
-  width: 500px;
-  height: 404px;
+  width: 400px;
+  height: 504px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  border-radius: 15px;
 }
 .voegtoe{
   width: 100px;
@@ -177,15 +178,10 @@ main {
   gap: 100px;
   margin-left: 3px;
 }
-#product{
-  align-self: flex-start;
-}
-#prijs{
-  align-self: flex-start;
-}
 #imgstyling{
   height: 265px;
   width: 293px;
+  border-radius: 5px;
 }
 .flexaccount{
   display: flex;
@@ -195,12 +191,14 @@ main {
 }
 .accountblock{
   background-color: #862727;
-  height: 300px;
+  height: 250px;
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   left: 0;
+  gap: 10px;
+  border-radius: 10px;
 }
 input{
   height: 60px;
@@ -242,7 +240,7 @@ input{
   justify-content: center;
 }
 #gapbetween{
-  gap: 320px;
+  gap: 460px;
 }
 #autostyleanders{
   display: flex;
@@ -260,4 +258,16 @@ input{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+}
+.aanpassenstyle{
+  height: auto;
+  width: 350px;
+  background-color: #862727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }

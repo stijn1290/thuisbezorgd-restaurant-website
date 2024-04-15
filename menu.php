@@ -44,36 +44,21 @@ include("header.php");
      if ($result->rowCount()> 0) {
         foreach ($result as $row) {
             echo "<div class=gerecht>";
-            echo "<div class=algemeen>";
-            echo "<h1 id=product>".$row["productnaam"]."</h1>";
+            echo "<h1 >".$row["productnaam"]."</h1>";
             echo "<h1>".$row["omschrijving"]."</h1>";
-            echo "<div class=voegtoe><h1 id=anderekleur>$ $row[prijs]</h1></div>";
-            echo "</div>";
             echo "<img id=imgstyling src='" . $row["afbeelding"] . "' alt='Beschrijving van de afbeelding'>";
-            echo "</div>";
-     } 
-     }
-     ?>
-            <?php
-     include("connection.php");
-     $sql = "SELECT * from drankproducten";
-     $result=$conn->query($sql);
-     
-     if ($result->rowCount()> 0) {
-        foreach ($result as $row) {
-            echo "<div class=gerecht>";
-            echo "<div class=algemeen>";
-            echo "<h1 id=product>".$row["productnaam"]."</h1>";
-            echo "<h1>".$row["omschrijving"]."</h1>";
             echo "<div class=voegtoe><h1 id=anderekleur>$ $row[prijs]</h1></div>";
-            echo "</div>";
-            echo "<img id=imgstyling src='" . $row["afbeelding"] . "' alt='Beschrijving van de afbeelding'>";
             echo "</div>";
      } 
      }
      ?>
         </section>
     </main>
+    <footer>
+        <?php
+        include ("footer.php");
+        ?>
+    </footer>
 </body>
 
 </html>
