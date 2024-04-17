@@ -20,6 +20,9 @@
             <a href="contactpage.php">
                 <h2>contact</h2>
             </a>
+            <a href="reserveren.php">
+                <h2>reserveren</h2>
+            </a>
         </nav>
         <a id="accountimage" href="account.php"><img src="img/image 2.png" alt=""></a>
     </nav>

@@ -9,11 +9,15 @@ $stmt->bindParam(":username" , $user);
 $stmt->bindParam(":password" , $pass);
 $result = $stmt->execute();
 $data = $stmt->fetch();
-if ($result)
+if ($data)
 {
  session_start();
  $_SESSION['username']= $data['username'];
  $_SESSION['rol']= $data['rol'];
  $_SESSION['controle']= $result;
  header('location:admin.php');
+}
+else
+{
+    header('location:account.php');
 }

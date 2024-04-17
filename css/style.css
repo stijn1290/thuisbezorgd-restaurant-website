@@ -33,7 +33,7 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  gap: 390px;
+  gap: 300px;
 }
 h2,
 h1,
@@ -191,7 +191,7 @@ main {
 }
 .accountblock{
   background-color: #862727;
-  height: 250px;
+  height: 260px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -259,6 +259,7 @@ input{
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  margin-top: 100px;
 }
 .aanpassenstyle{
   height: auto;
@@ -270,4 +271,24 @@ input{
   align-items: center;
   flex-wrap: wrap;
   gap: 5px;
+}
+.reserverenblock{
+  height: 430px;
+  width: 500px;
+  background-color: #862727;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+#textmargin{
+  margin-right: 15px;
+}
+.gebruiker{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
 }
