@@ -32,18 +32,24 @@ $keyword = "%" . $_POST['keyword']. "%";
 $sql = "SELECT * FROM eetproducten WHERE productnaam LIKE :keyword";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':keyword', $keyword);
-$result = $stmt->execute();
-if($result){
-    while ($row = $stmt->fetch()) {
-        echo "<div class=gerecht>";
+$stmt->execute();
+$results = $stmt->fetchAll();
+if(count($results)>0){
+    foreach($results as $row){
+        ?>
+            <div class=gerecht>
+                <?php 
         echo "<h1 >".$row["productnaam"]."</h1>";
-        echo "<h1>".$row["omschrijving"]."</h1>";
+        echo "<h1> ".$row["omschrijving"]."</h1>";
         echo "<img id=imgstyling src='" . $row["afbeelding"] . "' alt='Beschrijving van de afbeelding'>";
         echo "<div class=voegtoe><h1 id=anderekleur>$ $row[prijs]</h1></div>";
-        echo "</div>";
+        ?>
+            </div>
+            <?php
     }
 }
 ?>
- </section>
+        </section>
     </main>
+
 </html>
