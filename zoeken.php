@@ -38,12 +38,12 @@ if(count($results)>0){
     foreach($results as $row){
         ?>
             <div class=gerecht>
-                <?php 
-        echo "<h1 >".$row["productnaam"]."</h1>";
-        echo "<h1> ".$row["omschrijving"]."</h1>";
-        echo "<img id=imgstyling src='" . $row["afbeelding"] . "' alt='Beschrijving van de afbeelding'>";
-        echo "<div class=voegtoe><h1 id=anderekleur>$ $row[prijs]</h1></div>";
-        ?>
+                <h1> <?php echo "$row[productnaam] ";?></h1>
+                <h1> <?php echo "$row[omschrijving]";?></h1>
+                <img id=imgstyling src='<?php echo $row["afbeelding"];  ?>' alt='Beschrijving van de afbeelding'>
+                <div class=voegtoe>
+                    <h1 id=anderekleur><?php echo $row["prijs"];?></h1>
+                </div>
             </div>
             <?php
     }
